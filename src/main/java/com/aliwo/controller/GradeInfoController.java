@@ -63,9 +63,9 @@ public class GradeInfoController {
         model.addAttribute("gradeInfo");
         gradeInfoService.insertGradeInfo(gradeInfo);
         // spring中使用事务，默认spring中发生受检异常时提交
-        if (true) {
-            throw new Exception("发生受检异常了");
-        }
+        //if (true) {
+        //    throw new Exception("发生受检异常了");
+        //}
         // spring中使用事务，发生运行时异常时回滚
         //if (true) {
         //    throw new RuntimeException("发生非受检异常了(运行时异常)");
